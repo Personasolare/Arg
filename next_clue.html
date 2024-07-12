@@ -11,6 +11,10 @@
             height: 100%;
             overflow: hidden;
             position: relative; /* Necessário para o posicionamento absoluto dos elementos internos */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000000;
         }
 
         .background-image {
@@ -27,6 +31,7 @@
 
         .foreground-image {
             position: center;
+            
             width: 512px; /* Ajuste o tamanho conforme necessário */
             height: 512px; /* Ajuste conforme necessário */
             z-index: 2; /* Garante que a imagem superior está acima da imagem de fundo */
