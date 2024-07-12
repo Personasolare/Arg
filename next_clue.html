@@ -10,17 +10,25 @@
             padding: 0;
             height: 100%;
             overflow: hidden;
+            position: relative; /* Necessário para o posicionamento absoluto dos elementos internos */
         }
+
         .background-image {
-            background-color: #000000;
-            background-size: cover;
-            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            z-index: 1;
+            background-color: #000000; /* Caminho para a imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            z-index: 1; /* Garante que a imagem de fundo está abaixo da imagem superior */
         }
-         .foreground-image {
-            position: Center;
+
+        .foreground-image {
+            position: absolute;
+            top: 10%; /* Ajuste a posição conforme necessário */
+            left: 10%; /* Ajuste a posição conforme necessário */
             width: 80%; /* Ajuste o tamanho conforme necessário */
             height: auto; /* Ajuste conforme necessário */
             z-index: 2; /* Garante que a imagem superior está acima da imagem de fundo */
