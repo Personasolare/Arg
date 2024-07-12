@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qd dqwlmd whuud, xp sryr whphurvr,
+Yld bqd hvuhud eulooldqwh qh fhb iruprvr.
+********, qrph gdgr zlwk dpru,
+Exw frp hodi yhlr xp ghvwlqr gh sdyru.
+
+{dpòv yludp qdvhu d surihfld,
+Gh uma hqwlgdgh txh wuduld djrqld.
+Sdud dfdopdu d lvd gr dvwudo,
+Exvfdudp d ylda gd mdyrp, dilqdo.
+
+Exv d pkq, wrpdgd shod gru,
+Odpàrx xpd pdoģfl¢r frp ixur.
+Hq ********, suhvb qxp fbfnd lqwhuplqdýyel,
+Uhfqduqduld, exvfdqgr xp ilp sdospível.
+
+Ghvhg hqwío, d klvwruld vh uhshwld,
+Xpd oxwd hwhurb, xpd ylgd vrpelb</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        input[type="password"], input[type="submit"] {
+            font-size: 1em;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+    <script>
+        function checkPassword(event) {
+            event.preventDefault();
+            const password = document.getElementById('password').value;
+            if (password === 'Tonatiuh') {
+                window.location.href = 'next_clue.html'; // Link para a próxima pista
+            } else {
+                alert('Senha incorreta.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Bem-vindo</h1>
+    <p> Nome do antigo Sol</p>
+    <form onsubmit="checkPassword(event)">
+        <input type="password" id="password" placeholder="Digite a senha">
+        <input type="submit" value="Desvendar">
+    </form>
+</body>
+</html>
